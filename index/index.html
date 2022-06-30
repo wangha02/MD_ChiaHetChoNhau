@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BMI</title>
+</head>
+<body>
+<input id="number1" type="text">
+<input id="number2" type="text">
+<button onclick="check()" id="uplove">check</button>
+My check
+<h1 id="ketqua"> </h1>
+<script>
+  function check() {
+    let a = +document.getElementById("number1").value;
+    let b = +document.getElementById("number2").value;
+    let c = a % b
+    if(c == 0){
+      document.getElementById("ketqua").innerText = "chia het"
+    }else {
+      document.getElementById("ketqua").innerText = "deo nha"
+    }
+  }
+
+</script>
+</body>
+</html>
